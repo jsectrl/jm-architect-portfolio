@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project 1",
+      "category": "residential",
+      "description": "Nullam magna diam, faucibus in turpis sed, pellentesque pulvinar sem. Mauris fermentum nunc fringilla ex accumsan, et placerat elit egestas. Integer eu elementum massa. In hac habitasse platea dictumst. Mauris ultricies convallis ex venenatis malesuada. Etiam vehicula tempus diam in porttitor. Phasellus dignissim euismod mi sit amet facilisis. Vestibulum et dapibus dui. Vivamus non pulvinar metus.",
+      "date": "01-01-2024",
+      "location:": "Paris, France",
+      "credits": "Nullam pharetra massa nibh"
+    },
+    {
+      "id": 2,
+      "name": "Project 2",
+      "category": "commercial",
+      "description": "Nullam magna diam, faucibus in turpis sed, pellentesque pulvinar sem. Mauris fermentum nunc fringilla ex accumsan, et placerat elit egestas. Integer eu elementum massa. In hac habitasse platea dictumst. Mauris ultricies convallis ex venenatis malesuada. Etiam vehicula tempus diam in porttitor. Phasellus dignissim euismod mi sit amet facilisis. Vestibulum et dapibus dui. Vivamus non pulvinar metus.",
+      "date": "01-01-2024",
+      "location:": "Paris, France",
+      "credits": " Nullam pharetra massa nibh"
+    },
+    {
+      "id": 3,
+      "name": "Project 3",
+      "category": "public-works",
+      "description": "Nullam magna diam, faucibus in turpis sed, pellentesque pulvinar sem. Mauris fermentum nunc fringilla ex accumsan, et placerat elit egestas. Integer eu elementum massa. In hac habitasse platea dictumst. Mauris ultricies convallis ex venenatis malesuada. Etiam vehicula tempus diam in porttitor. Phasellus dignissim euismod mi sit amet facilisis. Vestibulum et dapibus dui. Vivamus non pulvinar metus.",
+      "date": "12-21-2022",
+      "location:": "Tepic, Nayarit",
+      "credits": " Nullam pharetra massa nibh"
+    }
+  ]
+}

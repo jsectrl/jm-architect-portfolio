@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import projectData from "../../data/data.json";
+import Link from "next/link";
 
 function Category({ name, categoryProjects }: any) {
   const [isCollapsed, collapseCategory] = useState(false);
@@ -25,7 +26,12 @@ function Category({ name, categoryProjects }: any) {
               isCollapsed ? `h-0` : `h-12`
             }`}
           >
-            {project.name}
+            <Link
+              className="block w-full h-full"
+              href={`projects/${project.slug}`}
+            >
+              {project.name}
+            </Link>
           </div>
         ))}
       </div>
@@ -60,9 +66,11 @@ export default function ProjectCategories() {
 
   return (
     <>
-      {categories.map((item: any, index: any) => (
-        <Category name={item.name} categoryProjects={item.projects} />
-      ))}
+      <div className="w-full my-4 space-y-4">
+        {categories.map((item: any, index: any) => (
+          <Category name={item.name} categoryProjects={item.projects} />
+        ))}
+      </div>
     </>
   );
 }

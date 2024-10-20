@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 
-export default function Menu() {
-  const [isCollapsed, collapseMenu] = useState(false);
+export default function Menu(props: { collapsed: boolean }) {
+  const [isCollapsed, collapseMenu] = useState(props.collapsed);
   const handleClick = () => {
     collapseMenu(!isCollapsed);
   };

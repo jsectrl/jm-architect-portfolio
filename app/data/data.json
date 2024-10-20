@@ -2,29 +2,32 @@
   "projects": [
     {
       "id": 1,
+      "slug": "project-1",
       "name": "Project 1",
       "category": "residential",
-      "description": "Nullam magna diam, faucibus in turpis sed, pellentesque pulvinar sem. Mauris fermentum nunc fringilla ex accumsan, et placerat elit egestas. Integer eu elementum massa. In hac habitasse platea dictumst. Mauris ultricies convallis ex venenatis malesuada. Etiam vehicula tempus diam in porttitor. Phasellus dignissim euismod mi sit amet facilisis. Vestibulum et dapibus dui. Vivamus non pulvinar metus.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo arcu, laoreet ac ipsum ut, lacinia malesuada massa. Vestibulum elementum dolor sit amet tincidunt congue. Mauris justo diam, cursus nec scelerisque quis, tristique eu nibh. Morbi molestie nisi neque, sed tempus erat vehicula vel. Fusce rutrum ex purus, ut pellentesque erat iaculis pulvinar. Ut blandit nibh id odio volutpat, sit amet dictum elit malesuada. Vestibulum eu massa et odio ultrices pellentesque. Integer et lacus quis neque facilisis vulputate. Vivamus eget aliquam velit, sed malesuada velit. Nunc id lobortis ipsum. Nam consequat tempus semper. Nunc venenatis vulputate tellus a imperdiet.",
       "date": "01-01-2024",
-      "location:": "Paris, France",
+      "location": "Paris, France",
       "credits": "Nullam pharetra massa nibh"
     },
     {
       "id": 2,
+      "slug": "project-2",
       "name": "Project 2",
       "category": "commercial",
-      "description": "Nullam magna diam, faucibus in turpis sed, pellentesque pulvinar sem. Mauris fermentum nunc fringilla ex accumsan, et placerat elit egestas. Integer eu elementum massa. In hac habitasse platea dictumst. Mauris ultricies convallis ex venenatis malesuada. Etiam vehicula tempus diam in porttitor. Phasellus dignissim euismod mi sit amet facilisis. Vestibulum et dapibus dui. Vivamus non pulvinar metus.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo arcu, laoreet ac ipsum ut, lacinia malesuada massa. Vestibulum elementum dolor sit amet tincidunt congue. Mauris justo diam, cursus nec scelerisque quis, tristique eu nibh. Morbi molestie nisi neque, sed tempus erat vehicula vel. Fusce rutrum ex purus, ut pellentesque erat iaculis pulvinar. Ut blandit nibh id odio volutpat, sit amet dictum elit malesuada. Vestibulum eu massa et odio ultrices pellentesque. Integer et lacus quis neque facilisis vulputate. Vivamus eget aliquam velit, sed malesuada velit. Nunc id lobortis ipsum. Nam consequat tempus semper. Nunc venenatis vulputate tellus a imperdiet.",
       "date": "01-01-2024",
-      "location:": "Paris, France",
+      "location": "Paris, France",
       "credits": " Nullam pharetra massa nibh"
     },
     {
       "id": 3,
+      "slug": "project-3",
       "name": "Project 3",
       "category": "public-works",
-      "description": "Nullam magna diam, faucibus in turpis sed, pellentesque pulvinar sem. Mauris fermentum nunc fringilla ex accumsan, et placerat elit egestas. Integer eu elementum massa. In hac habitasse platea dictumst. Mauris ultricies convallis ex venenatis malesuada. Etiam vehicula tempus diam in porttitor. Phasellus dignissim euismod mi sit amet facilisis. Vestibulum et dapibus dui. Vivamus non pulvinar metus.",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo arcu, laoreet ac ipsum ut, lacinia malesuada massa. Vestibulum elementum dolor sit amet tincidunt congue. Mauris justo diam, cursus nec scelerisque quis, tristique eu nibh. Morbi molestie nisi neque, sed tempus erat vehicula vel. Fusce rutrum ex purus, ut pellentesque erat iaculis pulvinar. Ut blandit nibh id odio volutpat, sit amet dictum elit malesuada. Vestibulum eu massa et odio ultrices pellentesque. Integer et lacus quis neque facilisis vulputate. Vivamus eget aliquam velit, sed malesuada velit. Nunc id lobortis ipsum. Nam consequat tempus semper. Nunc venenatis vulputate tellus a imperdiet.",
       "date": "12-21-2022",
-      "location:": "Tepic, Nayarit",
+      "location": "Tepic, Nayarit",
       "credits": " Nullam pharetra massa nibh"
     }
   ]

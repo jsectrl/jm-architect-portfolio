@@ -1,14 +1,13 @@
-import Menu from "../components/general/Menu";
+import Sidebar from "../components/general/Sidebar";
 import ProjectCategories from "../components/projects/ProjectCategories";
 
 export default function Projects() {
   return (
     <>
-      <div className="w-1/4 h-full flex flex-col items-center bg-green-500">
-        <Menu />
+      <Sidebar collapsed={true}>
         <ProjectCategories />
-      </div>
-      <div className="w-3/4 h-full bg-green-300">Main Content</div>
+      </Sidebar>
+      <div className="flex-grow h-full bg-green-300">Main Content</div>
     </>
   );
 }

@@ -17,7 +17,7 @@ export default function Menu(props: { collapsed: boolean }) {
           Architect Co.
         </div>
         <div
-          className={`relative transition-all duration-300 border border-red-300 ease-in-out grid grid-cols-2 ${
+          className={`relative overflow-hidden transition-all duration-300 border border-red-300 ease-in-out grid grid-cols-2 ${
             isCollapsed ? `h-0` : `h-72`
           }`}
         >

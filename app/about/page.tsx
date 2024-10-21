@@ -1,11 +1,10 @@
 import Menu from "../components/general/Menu";
+import Sidebar from "../components/general/Sidebar";
 
 export default function About() {
   return (
     <>
-      <div className="w-1/4 h-full flex justify-center bg-green-500">
-        <Menu />
-      </div>
+      <Sidebar collapsed={false} children={null}></Sidebar>
       <div className="w-3/4 p-4 h-full bg-green-300 overflow-y-auto">
         <div className="w-3/5 px-4 bg-white">
           <div className="py-2">

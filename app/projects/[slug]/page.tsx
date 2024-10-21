@@ -17,15 +17,21 @@ export default function Project({ params }: { params: { slug: string } }) {
     // Redirect to 404 page if post is not found
   }
 
+  const name = project?.name ?? "";
+  const description = project?.description ?? "";
+  const location = project?.location ?? "";
+  const date = project?.date ?? "";
+  const credits = project?.credits ?? "";
+
   return (
     <>
       <Sidebar collapsed={true}>
         <ProjectDetails
-          name={project?.name}
-          description={project?.description}
-          location={project?.location}
-          date={project?.date}
-          credits={project?.credits}
+          name={name}
+          description={description}
+          location={location}
+          date={date}
+          credits={credits}
         />
       </Sidebar>
       <div>kjdsnfkjdsan</div>;

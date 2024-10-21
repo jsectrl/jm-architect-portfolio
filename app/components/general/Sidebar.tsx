@@ -7,7 +7,7 @@ export default function Sidebar(props: {
 }) {
   return (
     <>
-      <div className="w-80 h-full flex flex-col items-center bg-green-500">
+      <div className="w-80 h-full flex flex-col items-center">
         <Menu collapsed={props.collapsed} />
         {props.children}
       </div>

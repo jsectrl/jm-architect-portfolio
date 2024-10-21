@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 function Detail({ name, content }: any) {
-  const [isCollapsed, collapseCategory] = useState(false);
+  const [isCollapsed, collapseCategory] = useState(true);
 
   const handleClick = () => {
     collapseCategory(!isCollapsed);
@@ -13,17 +13,17 @@ function Detail({ name, content }: any) {
     <>
       <div className="w-full">
         <div
-          className="w-full h-12 bg-pink-500 hover:cursor-pointer"
+          className="w-full h-12 p-2 flex items-center bg-gray-500 hover:cursor-pointer hover:bg-white hover:text-black"
           onClick={handleClick}
         >
           {name}
         </div>
         <div
-          className={`relative overflow-hidden bg-pink-200 transition-all duration-500 ease-in-out ${
-            isCollapsed ? `max-h-0` : `max-h-80`
+          className={`relative overflow-hidden bg-white transition-all duration-500 ease-in-out ${
+            isCollapsed ? `max-h-0` : `max-h-96`
           }`}
         >
-          {content}
+          <p className="p-2 text-black text-justify">{content}</p>
         </div>
       </div>
     </>

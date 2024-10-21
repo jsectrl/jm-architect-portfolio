@@ -5,7 +5,7 @@ import projectData from "../../data/data.json";
 import Link from "next/link";
 
 function Category({ name, categoryProjects }: any) {
-  const [isCollapsed, collapseCategory] = useState(false);
+  const [isCollapsed, collapseCategory] = useState(true);
 
   const handleClick = () => {
     collapseCategory(!isCollapsed);
@@ -15,19 +15,19 @@ function Category({ name, categoryProjects }: any) {
     <>
       <div className="w-full">
         <div
-          className="w-full h-12 bg-pink-500 hover:cursor-pointer"
+          className="w-full h-12 p-2 flex items-center bg-gray-500 hover:cursor-pointer hover:bg-white hover:text-black"
           onClick={handleClick}
         >
-          {name}
+          <h3 className="">{name}</h3>
         </div>
         {categoryProjects.map((project: any) => (
           <div
-            className={`relative overflow-hidden bg-pink-200 transition-all duration-300 ease-in-out ${
+            className={`relative overflow-hidden bg-gray-300 transition-all duration-300 ease-in-out ${
               isCollapsed ? `h-0` : `h-12`
             }`}
           >
             <Link
-              className="block w-full h-full"
+              className="w-full h-full flex items-center p-2 text-black"
               href={`projects/${project.slug}`}
             >
               {project.name}
@@ -45,19 +45,19 @@ export default function ProjectCategories() {
   const categories = [
     {
       key: "residential",
-      name: "Residential",
+      name: "RESIDENTIAL",
       projects: projects.filter(
         (project) => project.category === "residential"
       ),
     },
     {
       key: "commercial",
-      name: "Commercial",
+      name: "COMMERCIAL",
       projects: projects.filter((project) => project.category === "commercial"),
     },
     {
       key: "public-works",
-      name: "Public Works",
+      name: "PUBLIC WORKS",
       projects: projects.filter(
         (project) => project.category === "public-works"
       ),

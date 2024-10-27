@@ -2,6 +2,8 @@ import projectData from "../../data/data.json";
 import Sidebar from "@/app/components/general/Sidebar";
 import ProjectDetails from "@/app/components/projects/ProjectDetails";
 
+import { Carousel } from "flowbite-react";
+
 const projects = projectData.projects;
 
 export async function generateStaticParams() {
@@ -25,16 +27,17 @@ export default function Project({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <Sidebar collapsed={true}>
-        <ProjectDetails
-          name={name}
-          description={description}
-          location={location}
-          date={date}
-          credits={credits}
-        />
-      </Sidebar>
-      <div>kjdsnfkjdsan</div>;
+      <div className="flex flex-grow bg-[url('/images/home.jpeg')]">
+        <Sidebar collapsed={true}>
+          <ProjectDetails
+            name={name}
+            description={description}
+            location={location}
+            date={date}
+            credits={credits}
+          />
+        </Sidebar>
+      </div>
     </>
   );
 }

@@ -2,7 +2,28 @@
 
 import { useState } from "react";
 
-function Detail({ name, content }: any) {
+function ProjectTag({
+  name,
+  location,
+  date,
+}: {
+  name: string;
+  location: string;
+  date: string;
+}) {
+  return (
+    <>
+      <div className="h-18 w-full bg-white flex flex-col px-4 space-y-1 justify-center text-black">
+        <h2 className="uppercase">{name}</h2>
+        <h3 className="text-sm">
+          {location} {date}
+        </h3>
+      </div>
+    </>
+  );
+}
+
+function Detail({ name, content }: { name: string; content: string }) {
   const [isCollapsed, collapseCategory] = useState(true);
 
   const handleClick = () => {
@@ -13,15 +34,18 @@ function Detail({ name, content }: any) {
     <>
       <div className="w-full">
         <div
-          className="w-full h-12 p-2 flex items-center bg-gray-500 hover:cursor-pointer hover:bg-white hover:text-black"
+          className={`submenu-item ${
+            isCollapsed
+              ? `bg-black opacity-80`
+              : `bg-white text-black opacity-100`
+          }`}
           onClick={handleClick}
         >
-          {name}
+          <h3>{name}</h3>
+          <h3>+</h3>
         </div>
         <div
-          className={`relative overflow-hidden bg-white transition-all duration-500 ease-in-out ${
-            isCollapsed ? `max-h-0` : `max-h-96`
-          }`}
+          className={`detail-section ${isCollapsed ? `max-h-0` : `max-h-96`}`}
         >
           <p className="p-2 text-black text-justify">{content}</p>
         </div>
@@ -39,10 +63,12 @@ export default function ProjectDetails(props: {
 }) {
   return (
     <>
-      <div className="w-full my-4 space-y-4">
-        <Detail name={"Name"} content={props.name} />
-        <Detail name={"Date"} content={props.date} />
-        <Detail name={"Location"} content={props.location} />
+      <div className="w-full pt-12 my-4 space-y-4">
+        <ProjectTag
+          name={props.name}
+          location={props.location}
+          date={props.date}
+        />
         <Detail name={"Description"} content={props.description} />
         <Detail name={"Credits"} content={props.credits} />
       </div>

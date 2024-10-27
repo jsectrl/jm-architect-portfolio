@@ -9,42 +9,38 @@ export default function Menu(props: { collapsed: boolean }) {
   };
   return (
     <>
-      <div className="flex flex-col w-80">
+      <div className="flex flex-col w-96">
         <div
-          className="w-full h-12 bg-white text-black hover:cursor-pointer"
+          className="flex w-full h-8 px-1 items-center bg-white text-black hover:cursor-pointer"
           onClick={handleClick}
         >
-          Architect Co.
+          <h4 className="font-semibold text -sm">ARCHITECT CO</h4>
         </div>
         <div
-          className={`relative overflow-hidden transition-all duration-300 border border-red-300 ease-in-out grid grid-cols-2 ${
-            isCollapsed ? `h-0` : `h-72`
+          className={`relative flex overflow-hidden transition-all duration-300 border border-red-300 ease-linear grid grid-cols-2 ${
+            isCollapsed ? `h-0` : `h-88`
           }`}
         >
-          <a
-            href="/about"
-            className="overflow-hidden border border-red-300 text-white hover:bg-red-300 hover:text-black hover:cursor-pointer"
-          >
-            <div className="">About</div>
-          </a>
-          <a
-            href="/projects"
-            className="overflow-hidden border border-red-300 text-white hover:bg-red-300 hover:text-black hover:cursor-pointer"
-          >
-            <div className="">Projects</div>
-          </a>
-          <a
-            href="/news"
-            className="overflow-hidden border border-red-300 text-white hover:bg-red-300 hover:text-black hover:cursor-pointer"
-          >
-            <div className="">News</div>
-          </a>
-          <a
-            href="/contact"
-            className="overflow-hidden border border-red-300 text-white hover:bg-red-300 hover:text-black hover:cursor-pointer"
-          >
-            <div className="">Contact</div>
-          </a>
+          <div className="flex">
+            <a href="/about" className="menu-item">
+              About
+            </a>
+          </div>
+          <div className="flex">
+            <a href="/projects" className="menu-item">
+              Projects
+            </a>
+          </div>
+          <div className="flex">
+            <a href="/news" className="menu-item">
+              News
+            </a>
+          </div>
+          <div className="flex">
+            <a href="/contact" className="menu-item">
+              Contact
+            </a>
+          </div>
         </div>
       </div>
     </>

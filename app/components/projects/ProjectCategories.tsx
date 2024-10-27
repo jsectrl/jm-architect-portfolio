@@ -15,20 +15,22 @@ function Category({ name, categoryProjects }: any) {
     <>
       <div className="w-full">
         <div
-          className="w-full h-12 p-2 flex items-center bg-gray-500 hover:cursor-pointer hover:bg-white hover:text-black"
+          className={`submenu-item ${
+            isCollapsed
+              ? `bg-black opacity-80`
+              : `bg-white text-black opacity-100`
+          }`}
           onClick={handleClick}
         >
-          <h3 className="">{name}</h3>
+          <h3 className="opacity-100">{name}</h3>
+          <h3>+</h3>
         </div>
-        {categoryProjects.map((project: any) => (
-          <div
-            className={`relative overflow-hidden bg-gray-300 transition-all duration-300 ease-in-out ${
-              isCollapsed ? `h-0` : `h-12`
-            }`}
-          >
+        {categoryProjects.map((project: any, index: any) => (
+          <div className={`project-option ${isCollapsed ? `h-0` : `h-12`}`}>
             <Link
-              className="w-full h-full flex items-center p-2 text-black"
+              className="w-full h-full flex items-center p-2"
               href={`projects/${project.slug}`}
+              key={index}
             >
               {project.name}
             </Link>
@@ -68,7 +70,11 @@ export default function ProjectCategories() {
     <>
       <div className="w-full my-4 space-y-4">
         {categories.map((item: any, index: any) => (
-          <Category name={item.name} categoryProjects={item.projects} />
+          <Category
+            key={index}
+            name={item.name}
+            categoryProjects={item.projects}
+          />
         ))}
       </div>
     </>

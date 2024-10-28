@@ -30,7 +30,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col">
-        <div className="flex flex-grow px-20 pt-8">{children}</div>
+        <div className="flex flex-grow px-20 pt-8 relative overflow-y-auto">
+          {children}
+        </div>
         <Footer></Footer>
       </body>
     </html>

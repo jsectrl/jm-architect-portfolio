@@ -27,7 +27,7 @@ export default function Project({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      <div className="flex flex-grow bg-[url('/images/home.jpeg')]">
+      <div className="flex flex-grow pointer-events-auto z-20">
         <Sidebar collapsed={true}>
           <ProjectDetails
             name={name}
@@ -38,6 +38,10 @@ export default function Project({ params }: { params: { slug: string } }) {
           />
         </Sidebar>
       </div>
+      <Carousel className="absolute h-full w-full inset-0 z-10 pointer-events-auto">
+        <div className="h-full w-full bg-[url('/images/home.jpeg')] bg-cover bg-center"></div>
+        <div className="h-full w-full bg-[url('/images/home_2.jpeg')] bg-cover bg-center"></div>
+      </Carousel>
     </>
   );
 }

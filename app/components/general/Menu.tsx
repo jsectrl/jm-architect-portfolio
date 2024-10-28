@@ -16,11 +16,7 @@ export default function Menu(props: { collapsed: boolean }) {
         >
           <h4 className="font-semibold text -sm">ARCHITECT CO</h4>
         </div>
-        <div
-          className={`relative flex overflow-hidden transition-all duration-300 border border-red-300 ease-linear grid grid-cols-2 ${
-            isCollapsed ? `h-0` : `h-88`
-          }`}
-        >
+        <div className={`menu ${isCollapsed ? `h-0` : `h-88`}`}>
           <div className="flex">
             <a href="/about" className="menu-item">
               About

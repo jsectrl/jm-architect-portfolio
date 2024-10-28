@@ -24,11 +24,21 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .no-scrollbar {
+    scrollbar-width: none; /* Firefox */
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @layer components {
+  .menu {
+    @apply relative flex overflow-hidden transition-all duration-300 border border-red-300 ease-linear grid grid-cols-2;
+  }
+
   .menu-item {
-    @apply overflow-hidden flex-grow border border-white text-white hover:bg-white hover:text-black hover:cursor-pointer;
+    @apply overflow-hidden flex-grow border border-white bg-black opacity-60 text-white hover:bg-white hover:text-black hover:cursor-pointer hover:opacity-100;
   }
 
   .submenu-item {
